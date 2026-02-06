@@ -6,9 +6,20 @@ public class Inventario {
 
 
     public void listarTodos() {
+        for (ProductoInformatico prod : productos){
+            System.out.println(productos);
+
+
+        }
     }
 
     public void listarSinStock() {
+
+        for (ProductoInformatico prod : productos) {
+            if (prod.getStock() == 0) {
+                System.out.println(productos);
+            }
+        }
     }
 
     public boolean agregarProducto(ProductoInformatico p) {
